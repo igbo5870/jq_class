@@ -2,16 +2,27 @@ body{
 	margin: 0;
 	padding: 0;
 }
-
-
+main{
+	border: 3px solid #123251;
+	width: 600px;
+	margin: auto;
+}
+h1{
+	margin: auto;
+	background-color: #123251;
+	color: #EFEFEF;
+	height: 50px;
+	width: 600px;
+	text-align: center;
+}
 .matrice{
 	display: flex;
-	width: 500px;
+	width: 600px;
 	margin: auto;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid;
+	/*border: 1px solid;*/
 }
 .content-circle{
 	margin: 20px;
@@ -21,11 +32,13 @@ body{
 }
 
 .content-square{
+	margin: 20px;
 	width: 50px;
 	height: 50px;
 }
 
 .content-diamond{
+	margin: 20px;
 	width: 50px;
 	height: 50px;
 	transform: rotate(45deg);
@@ -34,21 +47,57 @@ body{
 .buttons{
 	margin: auto;
 	padding-top: 10px;
+	padding-bottom: 10px;
 	text-align: center;
 	width: 500px;
 	height: 50px;
 }
 
-.buttons input{
-	border: 0;
+#btnFull{
+	border: 3px solid #123251;
 	width: 100px;
 	height: 50px;
 	background-color: #123251;
 	color: #EFEFEF;
 }
 
-.buttons input:hover{
-	border: 0;
+#btnFull:hover{
+	border: 3px solid #123251;
+	border-bottom: 3px solid red;
+	width: 100px;
+	height: 50px;
+	background-color: #123251;
+	color: #EFEFEF;
+}
+
+#btnFull:focus{
+	border: 3px solid #123251;
+	border-bottom: 6px solid red;
+	width: 100px;
+	height: 50px;
+	background-color: #123251;
+	color: #EFEFEF;
+}
+#btnEmpty{
+	border: 3px solid #123251;
+	width: 100px;
+	height: 50px;
+	background-color: #EFEFEF;
+	color: #123251;
+}
+
+#btnEmpty:hover{
+	border: 3px solid #123251;
+	border-bottom: 3px solid red;
+	width: 100px;
+	height: 50px;
+	background-color: #EFEFEF;
+	color: #123251;
+}
+
+#btnEmpty:focus{
+	border: 3px solid #123251;
+	border-bottom: 6px solid red;
 	width: 100px;
 	height: 50px;
 	background-color: #EFEFEF;
@@ -56,10 +105,10 @@ body{
 }
 
 .full{
-	background-color: black;
-	border: 3px solid;
+	background-color: #123251;
+	border: 3px solid #123251;
 }
 
 .empty{
-	border: 3px solid;
+	border: 3px solid #123251;
 }
